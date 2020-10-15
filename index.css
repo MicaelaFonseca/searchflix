@@ -134,9 +134,9 @@ form button:active {
 }
 
 footer {
-	background-color: #222;
-	color: #fff;
-	font-size: 14px;
+	background-color: #C0392B ;
+	color: #1C2833;
+	font-size: 12px;
 	bottom: 0;
 	position: fixed;
 	left: 0;
@@ -154,7 +154,8 @@ footer i {
 }
 
 footer a {
-	color: #3c97bf;
+	color: #1C2833;
+	font-weight: bold;
 	text-decoration: none;
 }
 
