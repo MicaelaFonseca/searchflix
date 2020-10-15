@@ -1,7 +1,7 @@
 class MoviesList extends React.Component {
 	state = {
 		--> id de filme pré definido da omdb
-		moviesList: ["tt2294629"],
+		moviesList: ["tt0993846"], 
 		searchTerm: ""
 	};
 
