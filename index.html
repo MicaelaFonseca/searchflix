@@ -1,4 +1,4 @@
-<h1>SEARCHFLIX</h1>
+<h1>SearchFlix</h1>
 <div id="app"></div>
 <div class="content-footer">
 	<form>
@@ -6,6 +6,7 @@
 	</form>
 </div>
 
+--> script para geração digital de documento: Search atual
 <script>
 	function exportHTML() {
 		var header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' " +
@@ -13,9 +14,12 @@
 			"xmlns='http://www.w3.org/TR/REC-html40'>" +
 			"<head><meta charset='utf-8'><title>Export HTML to Word Document with JavaScript</title></head><body>";
 		var footer = "</body></html>";
-		var sourceHTML = header + document.getElementById("app").innerHTML + footer;
-		var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
-		var fileDownload = document.createElement("a");
+    --> html source data que contém header, body e footer
+    var sourceHTML = header + document.getElementById("app").innerHTML + footer;
+    --> html source vai ser codificada para formar o uri
+    var source = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(sourceHTML);
+    --> vai ser criado um link para o download
+    var fileDownload = document.createElement("a");
 		document.body.appendChild(fileDownload);
 		fileDownload.href = source;
 		fileDownload.download = 'document.doc';
